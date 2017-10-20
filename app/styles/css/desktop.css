@@ -1,0 +1,135 @@
+/* 921px ~ 1200px */
+@media only screen and (min-width: 921px) and (max-width: 1200px) {
+  .zara {
+    padding-left: 90px;
+  }
+  .zara-top {
+    height: 600px;
+    margin-bottom: 200px;
+  }
+  .top-intro-title {
+    font-size: 5.5rem;
+  }
+  .top-entrance {
+    bottom: 20%;
+  }
+  .mobileNavBtn {
+    display: none;
+  }
+  .zara-nav {
+    display: block;
+    z-index: 20;
+  }
+  .zara-content-item {
+    width: 900px;
+    margin-bottom: 350px;
+  }
+  .nav-close-bar {
+    background-color: #FFF;
+  }
+}
+@media only screen and (min-width: 921px) {
+  .content-title {
+    grid-area: title;
+    width: 200px;
+    text-align: left;
+  }
+  .content-title::before {
+    width: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .content-cover {
+    grid-area: cover;
+    /*width: 600px;*/
+    width: 100%;
+    height: 500px;
+  }
+  .content-linkbtn {
+    grid-area: linkbtn;
+    width: 200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .zara-content-display-left {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-column-gap: 10%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "cover title"
+      "cover linkbtn";
+  }
+  .zara-content-display-left .content-title,
+  .zara-content-display-left .content-linkbtn {
+    justify-self: left;
+  }
+
+  .zara-content-display-right {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-column-gap: 10%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "title cover"
+      "linkbtn cover";
+  }
+  .zara-content-display-right .content-title,
+  .zara-content-display-right .content-linkbtn {
+    justify-self: right;
+  }
+
+  .zara-navpage {
+    padding-left: 90px;
+  }
+  .zara-navpage-logo {
+    display: none;
+  }
+  .zara-navpage-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zara-nav-link {
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-size: cover;
+    color: #FFF;
+    background-color: rgb(0, 0, 0);
+  }
+  .zara-nav-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .zara-nav-link:hover {
+    color: red;
+  }
+  .newin-link:hover {
+    background-image: url(../img/navPic/newin.jpg);
+  }
+  .bestseller-link:hover {
+    background-image: url(../img/navPic/bestseller.jpg);
+  }
+  .joinlife-link:hover {
+    background-image: url(../img/navPic/joinlife.jpg);
+  }
+  .editorials-link:hover {
+    background-image: url(../img/navPic/editorials.jpg);
+  }
+  .linkwords {
+    position: absolute;
+  }
+  .zara-navpage-medialist {
+    display: none;
+  }
+}

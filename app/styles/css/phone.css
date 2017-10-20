@@ -1,0 +1,22 @@
+/* 0px ~ 554px */
+@media only screen and (max-width: 554px) {
+  .zara-top {
+    height: 450px;
+    margin-bottom: 100px;
+  }
+  .mobileNavBtn {
+    display: flex;
+  }
+  .zara-nav {
+    display: none;
+  }
+  .content-cover {
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .zara-nav-link:hover {
+    padding-left: 40px;
+    color: red;
+  }
+}

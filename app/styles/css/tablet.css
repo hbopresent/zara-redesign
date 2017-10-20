@@ -1,0 +1,40 @@
+/* 555px ~ 920px */
+@media only screen and (min-width: 555px) and (max-width: 920px) {
+  .zara-top {
+    height: 450px;
+    margin-bottom: 100px;
+  }
+  .mobileNavBtn {
+    display: flex;
+  }
+  .zara-nav {
+    display: none;
+  }
+  .top-intro-title {
+    font-size: 5rem;
+  }
+  .top-entrance {
+    bottom: 17%;
+  }
+  .content-cover {
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .zara-nav-link:hover {
+    padding-left: 40px;
+    color: red;
+  }
+}
+
+@media only screen and (min-width: 555px) {
+  .top-entrance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-entrance-collection {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
