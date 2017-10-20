@@ -49,11 +49,18 @@ var zara = (function() {
     }
   }
 
+  function resizeui() {
+    if(navState) {
+      zaraNav.style.backgroundColor = "#000";
+    }
+  }
+
   function initialize() {
     navBtnMobile.addEventListener("click", showNavpage);
     navBtnDesktop.addEventListener("click", showNavpage);
     navCloseBtnMobile.addEventListener("click", showNavpage);
     navCloseBtnDesktop.addEventListener("click", showNavpage);
+    window.addEventListener("resize", resizeui);
   }
 
   return {
